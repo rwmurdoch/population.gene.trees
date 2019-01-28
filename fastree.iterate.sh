@@ -10,11 +10,11 @@ for f in genestrim/*
 	fasttree -nt "$f" > genestree/"$base" 
 done
 
-#for f in proteinstrim/*
-#	do 
-#	name=${f##*/}
-#	base=${name%.trim}
-#	fasttree "$f" > proteinstree/"$base" 
-#done
+for f in proteinstrim/*
+	do 
+	name=${f##*/}
+	base=${name%.trim}
+	fasttree "$f" > proteinstree/"$base" 
+done
 
 
