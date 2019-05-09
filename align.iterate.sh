@@ -2,6 +2,9 @@
 
 #https://stackoverflow.com/questions/20796200/how-to-iterate-over-files-in-a-directory-with-bash
 
+mkdir genes.align
+mkdir proteins.align
+
 for f in genes/*
 	do 
 	name=${f##*/}
